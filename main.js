@@ -4,12 +4,12 @@ function randomNum(min, max) {
 //Get username and question values from index and run question through slice to get the first word of the question fex. Should, what , when, how, ARE. does isn't Then  get rid of uppercase later. Change the slice value if you find values like should i what is or just lock it at seven and go with that.
 function answerMachine() {
         const userName = document.querySelector(`#userId`).value;
-        console.log(userName);
         let userQuestion = document.querySelector(`#question`).value;
+        //options for userQuestionHtml if name is given or not
         if (userName.length > 0) {
-            userQuestionHtml.textContent = `${userName} asks the following: ${userQuestion}`;
+            userQuestionHtml.textContent = `${userName} asks: "${userQuestion}".`;
         } else {
-        userQuestionHtml.textContent = `Stranger asks the following: ${userQuestion}`;
+        userQuestionHtml.textContent = `Stranger asks: "${userQuestion}".`;
     }
 
     userQuestion = userQuestion.slice(0, 11);
@@ -22,7 +22,6 @@ let oneOfFive = randomNum(1, 6);
 oneOfFive = Math.round(oneOfFive);
 //Up above I'm making two different variables for random numbers and get rid of decimals. oneofTen is used only in the else statement when "if" and "else if" conditions don't match
 //oneOfFives questions change when answerMachine finds matches with slice
-//if else statement for more accurate answers using different switch statements and when the question is unknown to us just run oneOfTen
 if (userQuestion.slice(0, 8) === "should i") {
     switch (oneOfFive) {
         case 1:
@@ -365,7 +364,9 @@ switch (oneOfTen) {
         default: answer.textContent = ("The possibilities are endless in this matter. Seek advice from the nearest customer service person or a true friend.")
         }
     }
-    newQuestion.textContent = "Do you dare to ask me another question?";
+    newQuestion.textContent = "Dare you ask another question?";
     document.querySelector(`#question`).value = "";
-    
+    let prophAns = document.querySelector(`#prophetAnswer`);
+    prophAns.textContent = "Answer:";
+    //resets question value for a new question
 }

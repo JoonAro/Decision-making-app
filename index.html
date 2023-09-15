@@ -15,23 +15,27 @@
       </div>
     </header>
     <h1>Cranky old prophet</h1>
-    <h2>Ask me anything!</h2>
-    <p id="userQuestionHtml"></p>
-    <p id="answer"></p>
-
     <div>
-      <label for="question"></label>
-      <input
-        type="string"
-        id="question"
-        placeholder="What's troubling you this time?"
-      />
-    </div>
+      <div class="centerThis">
+        <h2>Ask me anything!</h2>
+        <p id="userQuestionHtml"></p>
+        <p id="prophetAnswer"></p>
+        <p id="answer"></p>
+        <div>
+          <label for="question"></label>
+          <input
+            type="string"
+            id="question"
+            placeholder="What's troubling you this time?"
+          />
+        </div>
 
-    <p id="newQuestion">
-      Answer you might not expect is one button click away!
-    </p>
-    <button onclick="answerMachine()">Ask away</button>
+        <p id="newQuestion">
+          Answer you might not expect is one button click away!
+        </p>
+        <button onclick="answerMachine()">Ask away</button>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
