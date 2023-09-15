@@ -1,17 +1,18 @@
 function randomNum(min, max) {
     return Math.random() * (max - min) + min;
 }
-console.log(userName);
-
 //Get username and question values from index and run question through slice to get the first word of the question fex. Should, what , when, how, ARE. does isn't Then  get rid of uppercase later. Change the slice value if you find values like should i what is or just lock it at seven and go with that.
 function answerMachine() {
-    const userName = document.querySelector(`#userId`).value;
-    let userQuestion = document.querySelector(`#question`).value;
-    userQuestionHtml.textContent = "Previous question: ",userQuestion, ".";
-    //this will post the users questions in index
-    let answer = document.querySelector("#answer");
+        const userName = document.querySelector(`#userId`).value;
+        console.log(userName);
+        let userQuestion = document.querySelector(`#question`).value;
+        if (userName.length > 0) {
+            userQuestionHtml.textContent = `${userName} asks the following: ${userQuestion}`;
+        } else {
+        userQuestionHtml.textContent = `Stranger asks the following: ${userQuestion}`;
+    }
 
-    userQuestion = userQuestion.slice(0, 10);
+    userQuestion = userQuestion.slice(0, 11);
     userQuestion = userQuestion.toLowerCase();
     //I'm taking the first few words from the userquestion and make the answers more accurate.
     //Random answers are generated but they are more precise
@@ -364,5 +365,7 @@ switch (oneOfTen) {
         default: answer.textContent = ("The possibilities are endless in this matter. Seek advice from the nearest customer service person or a true friend.")
         }
     }
-    newQuestion.textContent = "Do you dare to ask me another question? Maybe try google instead?";
+    newQuestion.textContent = "Do you dare to ask me another question?";
+    document.querySelector(`#question`).value = "";
+    
 }
