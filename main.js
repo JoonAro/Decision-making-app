@@ -53,7 +53,7 @@ else if (userQuestion.slice(0,6) === "should") {
             answer.textContent = "Shouldn't we find some better use for our time. I'm sorry but that's how it is."
         break;
         case 4:
-            answer.textContent = "What should be done... Hmm... Step away from the keyboard and get a life!"
+            answer.textContent = "What should be done... Hmm... Step away from the keyboard and think of a better question.."
         break;
         case 5:
             answer.textContent = "Better opportunities should present them self soon. Just wait and see!"
@@ -69,7 +69,7 @@ else if (userQuestion.slice(0,4) === "what") {
             answer.textContent = "Consider it this way. I could tell you exactly what it is you want to know. But where's the fun in that?";
         break;
         case 3:
-            answer.textContent = "Find something else to make better use of your time. What is this and that about.. blaablaa.. BORING!"
+            answer.textContent = "What is this and that about.. blaablaa.. Next question please.."
         break;
         case 4:
             answer.textContent = "What you can do is go out for a walk and clear your mind. The answer will come to you."
@@ -107,10 +107,10 @@ else if (userQuestion.slice(0,3) === "how") {
             answer.textContent = "Consider it this way. How will you ever learn to figure things out on your own if I tell you how every single tiny detail goes. I'm doing you a favour by not answering. You are welcome!";
         break;
         case 3:
-            answer.textContent = "Find something else to make better use of your time. How is this and that.. blaablaa.. BORING!"
+            answer.textContent = "How is this and that.. blaablaa.. Maybe ask a better question?"
         break;
         case 4:
-            answer.textContent = "How are you not able to find these answers on your own? Go out for a walk and clear your mind. The answer will come to you."
+            answer.textContent = "How are you not able to find these answers on your own? Clear your mind. The answer will come to you."
         break;
         case 5:
             answer.textContent = "Don't waste your time on this. You don't need to know how really."
@@ -142,13 +142,13 @@ else if (userQuestion.slice(0, 7) === "can you") {
             answer.textContent = "I can do many things but I won't help you on this matter";
         break;
         case 2:
-            answer.textContent = "Consider it this way. I could give you the winning lottery numbers if I wanted to. Would it make your life better? I doubt it";
+            answer.textContent = "I could give you the winning lottery numbers if I wanted to. I can answer your question but choose not to.";
         break;
         case 3:
             answer.textContent = "I can tell that you aren't that serious with these questions. Can you please ask better questions?";
         break;
         case 4:
-            answer.textContent = "I can't believe you wasted this opportunity on this. Try again tomorrow."
+            answer.textContent = "I can't believe you wasted your question on this. Try again tomorrow."
         break;
         case 5:
             answer.textContent = "Can I find a better job? These questions are making me question my life choices."
@@ -202,7 +202,7 @@ else if (userQuestion.slice(0, 8) === "is there") {
             answer.textContent = "There is no possibility of this."
         break;
         case 3:
-            answer.textContent = "There are more important questions to ask. Sorry if I'm blunt.";
+            answer.textContent = "There are more important questions to ask. Sorry if I'm being blunt.";
         break;
         case 4:
             answer.textContent = "Now there's a real mystery! There are limits to my power too. What an amazing question!"
@@ -281,7 +281,7 @@ else if (userQuestion.slice(0, 4) === "do i") {
             answer.textContent = "You do! No question about it.";
         break;
         case 4:
-            answer.textContent = "That doesn't quite add up. You should investigate the matter further."
+            answer.textContent = "Sometimes yes and sometimes no. Depends on the situation."
         break;
         case 5:
             answer.textContent = "Not as much as some other people. That I'm sure of."
