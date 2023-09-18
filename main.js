@@ -369,4 +369,13 @@ switch (oneOfTen) {
     let prophAns = document.querySelector(`#prophetAnswer`);
     prophAns.textContent = "Answer:";
     //resets question value for a new question
+   /*  let testing = "Hey hey how are you doing let's go and do whatever whenever. How fun would that be";
+    const scrollAnswer = (x) => {
+       let x = testing.length;
+        let testing2 = testing.slice(1, x);
+        console.log(testing2);
+    }
+    scrollAnswer(); */
 }
+
+//slice 0,1 etc answer to get the new
